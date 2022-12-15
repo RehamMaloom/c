@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from 'axios'
 import Grid from "react-bootstrap/Button";
 function Home() {
+  console.log("sd")
     const [items, setItems] = useState([]);
   
     axios.get("http://localhost:3000/user/home").then((result) => {
